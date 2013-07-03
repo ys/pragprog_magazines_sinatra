@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'redis'
 gem 'unicorn'
 gem 'sinatra'
 gem 'nokogiri'

@@ -3,3 +3,7 @@ gem 'redis'
 gem 'unicorn'
 gem 'sinatra'
 gem 'nokogiri'
+
+group :development do
+  gem 'capistrano'
+end

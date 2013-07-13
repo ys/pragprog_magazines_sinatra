@@ -17,10 +17,13 @@ role :app, "198.199.74.152"                          # This may be the same as y
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
+set :default_environment, {
+  'PATH' => "$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+}
 # Where will it be located on a server?
 set :deploy_to, "/home/pragprog_magazines/apps/"
-set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
-set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
+set :unicorn_conf, "#{deploy_to}current/unicorn"
+set :unicorn_pid, "#{deploy_to}shared/pids/unicorn.pid"
 
 # Unicorn control tasks
 namespace :deploy do

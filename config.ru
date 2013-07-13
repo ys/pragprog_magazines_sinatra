@@ -1,2 +1,2 @@
-require './magazines'
+require './server'
 run Sinatra::Application
